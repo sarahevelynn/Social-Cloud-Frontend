@@ -5,7 +5,7 @@
  "version": "2.1",
  "author": "SarahEvelynn Johnson, Bryan Long, Dan Beerman & Ben Casalino",
 "browser_action": {
-   "default_icon": "./src/social-cloud.png",
+   "default_icon": "./favicon.ico",
    "default_title":"Let's see what's trending"
  },
 "chrome_url_overrides" : {
