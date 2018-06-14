@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import cloud from '../social-cloud.png';
-import FaBeer from 'react-icons/lib/fa/search';
-import SubHeader1 from './SubHeader';
+import React from "react";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
+import cloud from "../social-cloud.png";
+import FaBeer from "react-icons/lib/fa/search";
+import SubHeader1 from "./SubHeader";
 
 // const top = styled.div`
 //   display: flex;
@@ -28,7 +28,7 @@ const SearchBar = styled.div`
   align-items: center;
   color: white;
   background-color: #325d81;
-  z-index:999999;
+  z-index: 999999;
 `;
 class Header extends React.Component {
   // constructor(props) {
@@ -36,7 +36,7 @@ class Header extends React.Component {
   // }
   state = {
     SubHeader: false,
-    category: 'default'
+    category: "default"
   };
 
   toggleSubHeader = () => {
@@ -45,7 +45,7 @@ class Header extends React.Component {
 
   matchCategory = (event, category) => {
     event.preventDefault();
-   this.setState({ category: category });
+    this.setState({ category: category });
   };
 
   render() {
@@ -59,7 +59,9 @@ class Header extends React.Component {
                 <h1>Social Cloud</h1>
               </Nav>
             </a>
-            <h3 id="tagline">View trending social issues by location in real time</h3>
+            <h3 id="tagline">
+              View trending social issues by location in real time
+            </h3>
           </div>
           <Nav>
             <button id="search-button" onClick={this.toggleSubHeader}>

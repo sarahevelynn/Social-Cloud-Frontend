@@ -6,7 +6,7 @@ export class UpdatePlace extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalIsOpen: false,
+      modalIsOpen: false
     };
     Modal.setAppElement(document.body);
   }
@@ -28,11 +28,21 @@ export class UpdatePlace extends React.Component {
   };
 
   render() {
-    return <div>
-        <button id="update-button" className="modal-open" onClick={this.openModal}>
+    return (
+      <div>
+        <button
+          id="update-button"
+          className="modal-open"
+          onClick={this.openModal}
+        >
           Update a Place
         </button>
-        <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} contentLabel="UpdateModule">
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          onRequestClose={this.closeModal}
+          contentLabel="UpdateModule"
+        >
           <div id="modal">
             <button onClick={this.closeModal} id="close-button">
               Close
@@ -67,6 +77,7 @@ export class UpdatePlace extends React.Component {
             </form>
           </div>
         </Modal>
-      </div>;
+      </div>
+    );
   }
 }

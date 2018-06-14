@@ -11,10 +11,12 @@ const CardWrapper = styled.div`
 
 class ProfileCard extends React.Component {
   render() {
-    return <CardWrapper>
+    return (
+      <CardWrapper>
         <h2>test</h2>
         <img src="http://via.placeholder.com/50x50" alt=" My Shot" />
-      </CardWrapper>;
+      </CardWrapper>
+    );
   }
 }
 

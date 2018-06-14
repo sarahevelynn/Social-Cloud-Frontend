@@ -3,7 +3,6 @@ import Select from "react-select";
 import "react-select/dist/react-select.css";
 import VirtualizedSelect from "react-virtualized-select";
 
-
 export class GetCategories extends React.Component {
   constructor(props) {
     super(props);

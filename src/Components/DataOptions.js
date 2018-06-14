@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export class GenerateData extends React.Component {
   generateLocations = location => {
     return (
@@ -9,11 +8,7 @@ export class GenerateData extends React.Component {
       </option>
     );
   };
-render() {
-  return(
-    <div>
-{this.props.woeidData.map(this.generateLocations)}
-</div>
-)
-}
+  render() {
+    return <div>{this.props.woeidData.map(this.generateLocations)}</div>;
+  }
 }

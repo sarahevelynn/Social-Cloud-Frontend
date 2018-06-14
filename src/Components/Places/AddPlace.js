@@ -30,11 +30,7 @@ export class AddPlace extends React.Component {
   render() {
     return (
       <div>
-        <button
-          id="add-button"
-          className="modal-open"
-          onClick={this.openModal}
-        >
+        <button id="add-button" className="modal-open" onClick={this.openModal}>
           Add a Place
         </button>
         <Modal
